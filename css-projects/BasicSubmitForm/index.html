@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Thank you for taking the time to fill in this form</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label class="title" id="name-label">Name: </label><input type="text" name="name" id="name" required
+                    placeholder="Name">
+                <label class="title" id="email-label">Email: </label><input id="email" name="email" type="email"
+                    required placeholder="name@email.com">
+            </div>
+            <div class="form-group">
+                <label class="title" id="number-label">How long have you been training?</label id="number-label"><input
+                    type="number" id="number" value="number" min="1" max="40" placeholder="Number of Years">
+                <label class="title">What type of Training do you normally do?</label><select id="dropdown">
+                    <option value="">(pick an option)</option>
+                    <option value="">Bodybuilding</option>
+                    <option value="">Powerlifting</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h3 class="time">When do you normally train?</h3>
+                <label>
+                    <input class="inline" type="radio" name="time" value="Morning">Morning</label>
+                <label>Afternoon
+                    <input class="inline" type="radio" name="time" value="Afternoon"></label>
+                <label>
+                    <input class="inline" type="radio" name="time" value="Evening">Evening</label>
+            </div>
+            <div class="form-group">
+                <h3 class="title">What is most important to you?</h3>
+                <div id="advice">
+                    <label>
+                        <input class="inline" value="Nutrition" type="checkbox">Nutrition</label>
+                    <label>Training
+                        <input class="inline" value="Training" type="checkbox"></label>
+                    <label>
+                        <input class="inline" value="Both" type="checkbox">Both</label>
+                    <label class="title"> Any advice you would give your younger self?</label>
+                    <textarea cols="40" value="advice" placeholder="I wish I knew.."></textarea>
+                </div>
+                <div id="submit-div">
+                    <input class="title" id="submit" type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
