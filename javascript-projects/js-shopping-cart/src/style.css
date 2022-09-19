@@ -1,0 +1,185 @@
+/* 
+! with "*" and "body" we change the default style of the page
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --dark-color: #212529;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+i {
+    cursor: pointer;
+}
+/* 
+! below you will find the navbar styling
+*/
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dark-color);
+    color: white;
+    padding: 25px 60px;
+    margin-bottom: 10px;
+}
+
+.cart {
+    position: relative;
+    background-color: #fff;
+    color: var(--dark-color);
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 4px;
+}
+
+.cartAmount {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+/* !Shop item styles are below */
+
+.shop {
+    display: grid;
+    grid-template-columns: repeat(4, 223px);
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+@media (max-width: 1000px) {
+    .shop {
+        grid-template-columns: repeat(2, 223px);
+    }
+}
+@media (max-width: 500px) {
+    .shop {
+        grid-template-columns: repeat(1, 223px);
+    }
+}
+.item img {
+    width: 100%;
+    border-radius: 2px 2px 0 0;
+}
+.item {
+    border: 2px solid var(--dark-color);
+    border-radius: 4px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.price-quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.fa-minus {
+    color: red;
+}
+
+.fa-plus {
+    color: green;
+}
+
+/* ! style for labels and buttons */
+
+.text-center {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.HomeBtn,
+.checkout,
+.remove-all {
+    background-color: var(--dark-color);
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.checkout {
+    background-color: green;
+}
+.remove-all {
+    background-color: red;
+}
+
+.fa-x {
+    color: red;
+    font-weight: bold;
+}
+
+/* ! styles for cart */
+
+.shopping-cart {
+    display: grid;
+    grid-template-columns: repeat(1, 320px);
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cart-item {
+    display: flex;
+    border: 2px solid var(--dark-color);
+    border-radius: 5px;
+}
+
+.cart-item img {
+    width: 7rem;
+}
+
+.title-price-x {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 195px;
+    padding-right: 1rem;
+}
+
+.title-price {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cart-item-price {
+    background-color: var(--dark-color);
+    color: white;
+    border-radius: 4px;
+    padding: 3px 6px;
+}
